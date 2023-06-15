@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#EF4040"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="162dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonfly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/android" />
+
+    <Button
+        android:id="@+id/botonupdate"
+        android:layout_width="158dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="118dp"
+        android:backgroundTint="#D33737"
+        android:drawableLeft="@android:drawable/stat_notify_sync_noanim"
+        android:drawableTint="@color/white"
+        android:text="@string/btn2"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/botonlevel4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonfly"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonfly"
+        android:layout_width="150dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="#8E76B8"
+        android:drawableLeft="@drawable/avion"
+        android:text="@string/btn1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonpicture"
+        app:layout_constraintEnd_toStartOf="@+id/botonupdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagen" />
+
+    <Button
+        android:id="@+id/botonpicture"
+        android:layout_width="333dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="#AAA0A0"
+        android:text="@string/btn3"
+        android:textColor="#AF2121"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonlocked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonfly" />
+
+    <Button
+        android:id="@+id/botonlocked"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="#0C0C0C"
+        android:text="@string/btn4"
+        android:textColor="#36BFB5"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonpause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonpicture" />
+
+    <Button
+        android:id="@+id/botonpause"
+        android:layout_width="173dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="147dp"
+        android:background="#276329"
+        android:backgroundTint="#276329"
+        android:drawableLeft="@android:drawable/ic_media_pause"
+        android:text="@string/btn6"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonlocked"
+        app:layout_constraintTop_toBottomOf="@+id/botonlevel4" />
+
+    <Button
+        android:id="@+id/botonlevel4"
+        android:layout_width="182dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="16dp"
+        android:background="#1B7777"
+        android:backgroundTint="#1B7777"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:drawableRight="@android:drawable/btn_star_big_on"
+        android:text="@string/btn5"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonpause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/botonlocked"
+        app:layout_constraintTop_toBottomOf="@+id/botonupdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

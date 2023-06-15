@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ejercicio_Individual_11</string>
+    <string name="btn2">Updating profile</string>
+    <string name="btn1">Turn off fligth mode</string>
+    <string name="btn3">Picture saved to gallery</string>
+    <string name="btn4">Unlocked level 5</string>
+    <string name="btn5">Level 4 completed</string>
+    <string name="btn6">Music pause</string>
+</resources>
